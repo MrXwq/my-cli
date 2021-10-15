@@ -2,16 +2,16 @@
     <div class="about">
         <h1>This is an about page</h1>
         <div>{{ token }}</div>
-        <About></About>
+        <Test></Test>
     </div>
 </template>
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 import { useStore } from 'vuex'
-import About from '../components/About'
+import Test from '../components/Test'
 export default defineComponent({
     components: {
-        About
+        Test
     },
     setup() {
         const store = useStore()
