@@ -12,7 +12,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{vue,js,ts,tsx}": "eslint --fix"
+    "src/**/*.{j,t}s?(x)": [
+        "eslint --fix",
+        "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
