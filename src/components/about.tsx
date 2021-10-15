@@ -1,8 +1,8 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    name: 'About',
+    name: 'About1',
     setup() {
-        return () => <div>About</div>
+        return () => <div>About7777777</div>
     }
 })

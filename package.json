@@ -8,7 +8,11 @@
     "build": "webpack --config build/webpack.prod.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
     "start": "webpack serve --open",
-    "server": "node server.js"
+    "server": "node server.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,tsx}": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +20,8 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "@vue/babel-plugin-jsx": "^1.0.7",
@@ -29,8 +35,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "fork-ts-checker-webpack-plugin": "^6.3.3",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
+    "lint-staged": "^11.2.3",
     "mini-css-extract-plugin": "^2.3.0",
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
@@ -46,8 +54,10 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.172",
+    "axios": "^0.20.0-0",
     "lodash": "^4.17.21",
     "vue": "^3.2.9",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   }
 }
