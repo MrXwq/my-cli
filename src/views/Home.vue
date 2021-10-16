@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     {{ token }}
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="Vue logo" src="../assets/imgs/logo.png" />
     <HelloWorld msg="Welcome" />
   </div>
 </template>
