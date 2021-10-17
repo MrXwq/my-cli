@@ -63,7 +63,7 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
-                test: /\.tsx?$/,
+                test: /\.(t|j)sx?$/,
                 exclude: /node_modules/,
                 use: [
                     'babel-loader',

@@ -13,8 +13,8 @@
   },
   "lint-staged": {
     "src/**/*.{j,t}s?(x)": [
-        "eslint --fix",
-        "prettier --write"
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "keywords": [],
@@ -58,6 +58,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.172",
     "axios": "^0.20.0-0",
+    "core-js": "^3.18.3",
     "lodash": "^4.17.21",
     "vue": "^3.2.9",
     "vue-router": "4",

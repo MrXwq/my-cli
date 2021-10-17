@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { useStore } from 'vuex'
-import { defineComponent, computed } from "vue";
+import { defineComponent, computed, onMounted } from "vue";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default defineComponent({
@@ -18,6 +18,9 @@ export default defineComponent({
   },
   setup() {
     const store = useStore()
+    onMounted(() => {
+      store.dispatch('getUser')
+    })
     const token = computed(() => store.state.token)
     return { token }
   }
