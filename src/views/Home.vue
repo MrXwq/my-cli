@@ -1,14 +1,17 @@
 <template>
   <div class="home">
-    {{ token }}
+    <!-- {{ token }} -->
     <img alt="Vue logo" src="../assets/imgs/logo.png" />
     <HelloWorld msg="Welcome" />
   </div>
 </template>
 
 <script lang="ts">
-import { useStore } from 'vuex'
-import { defineComponent, computed, onMounted } from "vue";
+// import { useStore } from 'vuex'
+import {
+  defineComponent,
+  //  computed, onMounted 
+} from "vue";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default defineComponent({
@@ -16,13 +19,13 @@ export default defineComponent({
   components: {
     HelloWorld,
   },
-  setup() {
-    const store = useStore()
-    onMounted(() => {
-      store.dispatch('getUser')
-    })
-    const token = computed(() => store.state.token)
-    return { token }
-  }
+  // setup() {
+  //   const store = useStore()
+  //   onMounted(() => {
+  //     store.dispatch('getUser')
+  //   })
+  //   const token = computed(() => store.state.token)
+  //   return { token }
+  // }
 });
 </script>
