@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import home from '../views/home.vue'
 
-const resolvePath = (path: string) => `/manage/${path}`
+const resolvePath = (path: string) => `/my-cli/manage/${path}`
 
 const routes: Array<RouteRecordRaw> = [
     {
