@@ -11,6 +11,7 @@
     "server": "node server.js",
     "prepare": "husky install"
   },
+  "homepage": "https://github.com/mrxwq/my-cli#readme",
   "lint-staged": {
     "src/**/*.{j,t}s?(x)": [
       "eslint --fix",
