@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import home1 from '../views/home1.vue'
+import home from '../views/home.vue'
+
+const resolvePath = (path: string) => `/manage/${path}`
 
 const routes: Array<RouteRecordRaw> = [
     {
-        path: '/',
-        name: 'home1',
-        component: home1
+        path: resolvePath('home'),
+        name: 'home',
+        component: home
     },
     {
-        path: '/test',
+        path: resolvePath('test'),
         name: 'test',
         component: () => import('../views/test')
     }
