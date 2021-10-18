@@ -1,5 +1,5 @@
 {
-  "name": "shop",
+  "name": "my-cli",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -11,7 +11,11 @@
     "server": "node server.js",
     "prepare": "husky install"
   },
-  "homepage": "https://github.com/mrxwq/my-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MrXwq/my-cli.git"
+  },
+  "homepage": "https://MrXwq.github.com/my-cli",
   "lint-staged": {
     "src/**/*.{j,t}s?(x)": [
       "eslint --fix",
@@ -19,7 +23,7 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "MrXwq",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.5",
