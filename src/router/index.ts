@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import home from '../views/home.vue'
+const home = () => import('@/views/home.vue')
+const test = () => import('../views/test')
 
-const resolvePath = (path: string) => `/my-cli/manage/${path}`
+const resolvePath = (path: string) => `/${path}`
 
 const routes: Array<RouteRecordRaw> = [
+    { path: '/', redirect: { name: 'home' } },
     {
         path: resolvePath('home'),
         name: 'home',
@@ -12,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: resolvePath('test'),
         name: 'test',
-        component: () => import('../views/test')
+        component: test
     }
 ]
 
