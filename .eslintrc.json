@@ -19,7 +19,10 @@
     "parserOptions": {
         "ecmaVersion": 13,
         "parser": "@typescript-eslint/parser",
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "plugins": [
         "vue",
