@@ -12,6 +12,7 @@ export default defineComponent({
         }
     },
     setup(props) {
+            console.log(777)
         return () => (
             <>
                 <Test />
