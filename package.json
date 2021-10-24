@@ -11,7 +11,7 @@
   },
   "homepage": "https://MrXwq.github.io/my-cli",
   "lint-staged": {
-    "src/**/*.{(t|j)sx?,vue}": [
+    "src/**/*.{tsx, ts, js, vue}": [
       "eslint --fix",
       "prettier --write"
     ]
